@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    width: calc(100% - 22px); /* Adjusted to fit within the container */
+}
+
+#search-button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#search-button:hover {
+    background-color: #218838;
+}
+
+#results-container {
+    text-align: left;
+}
+
+.recipe {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.recipe img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.recipe h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.recipe p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+.recipe-details {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.recipe-details img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.recipe-details h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+}
+
+.recipe-details h3 {
+    margin: 20px 0 10px 0;
+    font-size: 1.2em;
+}
+
+.recipe-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.recipe-details ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (min-width: 600px) {
+    .container {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        max-width: 600px;
+    }
+
+    .search-container {
+        flex-direction: row;
+    }
+
+    #search-input {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    #search-button {
+        flex: 0 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 60%;
+        max-width: 700px;
+    }
+}
